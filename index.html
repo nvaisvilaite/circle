@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+var PI = Math.PI;
+
+function Circle(radius){
+    this.radius = radius;
+}
+Circle.prototype.circumference = function(){
+    return this.radius * 2 * PI;
+};
+Circle.prototype.area = function(){
+    return this.radius * this.radius * PI;
+};
+
+var circle10 = new Circle(10);
+alert(circle10.circumference());
+alert(circle10.area());
+</script>
+</body>
+</html>
